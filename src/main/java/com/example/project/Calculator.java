@@ -60,7 +60,12 @@ public class Calculator{
     // (THIS METHOD DOES NOT PRINT)
     public int absoluteValue(int num1, int num2) {
         //implement code here
-        return (num1 - num2) / -1;
+
+        if ((num1 - num2 >= 0)) {
+            return (num1 - num2);
+        } else {
+            return (num1 - num2) / -1;
+        }
     }
     
     // method that constructs and returns a String in the format:
